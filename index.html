@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Clientes</h1>
+        <p>Nuestro sistema optimiza la gestión de relaciones comerciales con funcionalidades avanzadas.</p>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar" aria-label="Menú de opciones">
+                <h2>Opciones</h2>
+                <ul id="options">
+                    <li><a href="#" data-action="registrar"><i class="icon">➕</i> Registrar clientes</a></li>
+                    <li><a href="#" data-action="consultar"><i class="icon">🔍</i> Consultar clientes</a></li>
+                    <li><a href="#" data-action="actualizar"><i class="icon">✏️</i> Actualizar información</a></li>
+                    <li><a href="#" data-action="desactivar"><i class="icon">❌</i> Desactivar cliente</a></li>
+                    
+                </ul>
+            </nav>
+
+            <section id="content" class="content-area" tabindex="0">
+                <h2>Bienvenido</h2>
+                <p>Selecciona una opción del menú para comenzar.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal para acciones dinámicas -->
+    <div id="modal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content" aria-labelledby="modal-header">
+            <button class="close-button" aria-label="Cerrar">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
